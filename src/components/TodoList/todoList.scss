@@ -1,0 +1,11 @@
+@import "../../sassStyles/variables.scss";
+.todos__container {
+  background-color: white;
+  margin: -1em 0.75em 2em 0.75em;
+  border-radius: 10px;
+
+  font-size: 2rem;
+  .todo__container:not(:last-child) {
+    border-bottom: 1px solid $light-vgrayish-blue;
+  }
+}

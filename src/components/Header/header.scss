@@ -8,6 +8,8 @@
   text-transform: uppercase;
   letter-spacing: 0.75rem;
   color: white;
+  position: relative;
+  z-index: -1;
 }
 
 .header__wrapper {
