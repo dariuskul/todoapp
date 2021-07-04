@@ -1,0 +1,25 @@
+@import "../../sassStyles/variables";
+
+.header {
+  background-image: url(../../assets/bg-mobile-light.jpg);
+  background-size: cover;
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75rem;
+  color: white;
+}
+
+.header__wrapper {
+  padding: 2em 0.75em 2em 0.75em;
+
+  .header__typography {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header__input {
+  margin-top: 1.5em;
+}

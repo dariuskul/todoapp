@@ -1,0 +1,32 @@
+@import "../../sassStyles/variables";
+input {
+  border: none;
+  outline: none;
+}
+
+.input__wrapper {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.input__checkmark {
+  padding: 0.4em;
+}
+
+.input__circleContainer {
+  height: 0.6em;
+  width: 0.6em;
+  border-radius: 50%;
+  border: 2px solid $light-vgrayish-blue;
+  margin-right: 0.2em;
+}
+
+.input__form {
+  display: flex;
+  justify-content: space-around;
+
+  input {
+    flex: 1;
+    color: $light-grayish-blue;
+  }
+}
