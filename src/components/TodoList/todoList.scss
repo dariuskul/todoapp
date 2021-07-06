@@ -3,6 +3,27 @@
   background-color: white;
   margin: -1em 0.75em 2em 0.75em;
   border-radius: 10px;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: 32.625em) {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+
+  @media (min-width: 41.0625em) {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  @media (min-width: 56.25em) {
+    margin-left: 6em;
+    margin-right: 6em;
+  }
+
+  @media (min-width: 73.5em) {
+    margin-left: 12em;
+    margin-right: 12em;
+  }
 
   font-size: 2rem;
   .todo__container:not(:last-child) {

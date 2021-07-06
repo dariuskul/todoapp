@@ -6,19 +6,20 @@ const Input = ({
   todo,
   handleDone,
   handleRemove,
-  handleSubmit,
+  handleAddTodo,
 }) => {
   if (isInput) {
     return (
       <div className="input__wrapper">
         <div className="input__checkmark">
-          <form className="input__form" onSubmit={handleSubmit}>
+          <form className="input__form" onSubmit={handleAddTodo}>
             <div className="input__circleContainer">
               <div className="input__circle" />
             </div>
             <input
               onChange={handleChange}
               type="text"
+              required
               placeholder="Create a new todo"
             />
           </form>

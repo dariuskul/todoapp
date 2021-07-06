@@ -14,8 +14,8 @@ input {
 }
 
 .input__circleContainer {
-  height: 0.6em;
-  width: 0.6em;
+  min-height: 24px;
+  min-width: 24px;
   border-radius: 50%;
   border: 2px solid $light-vgrayish-blue;
   margin-right: 0.2em;
@@ -24,7 +24,7 @@ input {
 .input__form {
   display: flex;
   justify-content: space-around;
-
+  word-break: break-all;
   input {
     flex: 1;
     color: $light-grayish-blue;

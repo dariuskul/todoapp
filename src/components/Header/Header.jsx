@@ -2,11 +2,7 @@ import { useState } from "react";
 import Input from "../Input/Input";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import "./header.scss";
-const Header = () => {
-  const [todo, setTodo] = useState("");
-  const handleChange = (e) => {
-    setTodo(e.target.value);
-  };
+const Header = ({ handleChange, handleAddTodo }) => {
   return (
     <header className="header">
       <div className="header__wrapper">
@@ -16,7 +12,11 @@ const Header = () => {
         </div>
 
         <div className="header__input">
-          <Input isInput handleChange={handleChange} />
+          <Input
+            isInput
+            handleChange={handleChange}
+            handleAddTodo={handleAddTodo}
+          />
         </div>
       </div>
     </header>

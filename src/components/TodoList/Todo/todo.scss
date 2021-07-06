@@ -1,6 +1,4 @@
 @import "../../../sassStyles/variables";
-.todo__container {
-}
 
 .todo__wrapper {
   display: flex;
@@ -9,29 +7,47 @@
   padding: 0.5em;
 
   h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    word-break: break-all;
   }
 
   h3.todo__done {
     text-decoration: line-through;
+    word-break: break-all;
   }
 
   .todo__typography {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .todo__remove {
+    margin-left: 1em;
+    cursor: pointer;
   }
 }
 
 .todo__circleContainer {
-  height: 0.6em;
-  width: 0.6em;
+  min-height: 24px;
+  min-width: 24px;
   border-radius: 50%;
   border: 2px solid $light-vgrayish-blue;
   margin-right: 0.5em;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  margin-right: 1em;
+  cursor: pointer;
   svg {
   }
+}
+
+.todo__circleContainer.check__mark {
+  border: none;
+  background: -webkit-linear-gradient(
+    left top,
+    $primary-grad-from,
+    $primary-grad-to
+  );
 }
