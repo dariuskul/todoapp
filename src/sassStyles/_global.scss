@@ -6,4 +6,51 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.125rem;
   background-color: $light-gray;
+  .dark__mode {
+    height: 100vh;
+    background-color: hsl(235, 21%, 11%);
+    .header {
+      background-image: url(../assets/bg-mobile-dark.jpg);
+
+      .input__wrapper {
+        background-color: hsl(235, 24%, 19%);
+        input {
+          background-color: hsl(235, 24%, 19%);
+        }
+
+        .input__circleContainer {
+          border: 2px solid hsl(236, 9%, 61%);
+        }
+      }
+
+      @media (min-width: 41.0625em) {
+        background-image: url(../assets/bg-desktop-dark.jpg);
+      }
+    }
+
+    .todos__container {
+      background-color: hsl(235, 24%, 19%);
+      .todo__typography {
+        .todo__circleContainer {
+          border: 2px solid hsl(236, 9%, 61%);
+        }
+
+        h3 {
+          color: hsl(234, 39%, 85%);
+        }
+      }
+
+      button {
+        background-color: hsl(235, 24%, 19%);
+      }
+    }
+
+    .control__filters {
+      background-color: hsl(235, 24%, 19%);
+    }
+
+    .todo__container:not(:last-child) {
+      border-bottom: 1px solid hsl(234, 11%, 52%);
+    }
+  }
 }

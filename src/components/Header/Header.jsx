@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Input from "../Input/Input";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import "./header.scss";

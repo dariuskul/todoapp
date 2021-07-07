@@ -1,4 +1,3 @@
-import check from "../../assets/icon-check.svg";
 import "./input.scss";
 const Input = ({
   isInput,
@@ -27,12 +26,6 @@ const Input = ({
       </div>
     );
   }
-
-  return (
-    <div className="todo__wrapper">
-      {todo ? <div className="todo__container"></div> : <h1>Empty</h1>}
-    </div>
-  );
 };
 
 export default Input;
